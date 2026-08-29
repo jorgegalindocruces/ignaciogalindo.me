@@ -35,6 +35,7 @@
   @keyframes recblink { 0%,100% { opacity: 1; } 50% { opacity: .15; } }
 
   .nav-link:hover { color: #ff5c1a !important; }
+  .nav-link.active { color: #ff5c1a !important; }
   .btn-showreel:hover { background: #ffb08a !important; }
   .btn-contact:hover { border-color: #ff5c1a !important; color: #ff5c1a !important; }
   .skill-card:hover { border-color: #ff5c1a !important; }
@@ -458,5 +459,25 @@
     </div>
   </footer>
 </main>
+<script>
+(function() {
+  var sections = document.querySelectorAll('section[id], footer[id]');
+  var links = document.querySelectorAll('.site-nav .nav-link');
+  var map = {};
+  links.forEach(function(a) {
+    var id = a.getAttribute('href').replace('#', '');
+    map[id] = a;
+  });
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && map[entry.target.id]) {
+        links.forEach(function(a) { a.classList.remove('active'); });
+        map[entry.target.id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(function(s) { observer.observe(s); });
+})();
+</script>
 </body>
 </html>
