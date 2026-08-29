@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
   body { margin: 0; background: #0e0d0b; }
   a { color: #ff5c1a; text-decoration: none; }
   a:hover { color: #ffb08a; }
@@ -43,6 +43,28 @@
   .contact-link:hover { color: #ff5c1a !important; }
 
   .project-card { transition: transform .18s ease, box-shadow .18s ease; }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px clamp(20px, 4vw, 48px);
+    background: rgba(14, 13, 11, .85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #23201b;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: #a39b8f;
+    box-sizing: border-box;
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -97,21 +119,23 @@
 <body>
 <main style="background: #0e0d0b; color: #f2ede6; font-family: 'Archivo', sans-serif; overflow: hidden;">
 
-  <!-- HERO -->
-  <header style="min-height: 92vh; display: flex; flex-direction: column; padding: clamp(20px, 4vw, 48px); box-sizing: border-box;">
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a39b8f;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="width: 9px; height: 9px; border-radius: 50%; background: #ff2e1f; animation: recblink 1.6s infinite;"></span>
-        <span style="letter-spacing: .12em;">REC · MADRID</span>
-      </div>
-      <nav aria-label="Navegación principal" style="display: flex; gap: 22px; flex-wrap: wrap;">
-        <a href="#trayectoria" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">TRAYECTORIA</a>
-        <a href="#formacion" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">FORMACIÓN</a>
-        <a href="#especialidades" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">ESPECIALIDADES</a>
-        <a href="#proyectos" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">SIDE PROJECTS</a>
-        <a href="#contacto" style="color: #ff5c1a; letter-spacing: .08em;">CONTACTO</a>
-      </nav>
+  <!-- NAV FIJA -->
+  <div class="site-nav">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 9px; height: 9px; border-radius: 50%; background: #ff2e1f; animation: recblink 1.6s infinite;"></span>
+      <span style="letter-spacing: .12em;">REC · MADRID</span>
     </div>
+    <nav aria-label="Navegación principal" style="display: flex; gap: 22px; flex-wrap: wrap;">
+      <a href="#trayectoria" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">TRAYECTORIA</a>
+      <a href="#formacion" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">FORMACIÓN</a>
+      <a href="#especialidades" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">ESPECIALIDADES</a>
+      <a href="#proyectos" class="nav-link" style="color: #a39b8f; letter-spacing: .08em;">SIDE PROJECTS</a>
+      <a href="#contacto" style="color: #ff5c1a; letter-spacing: .08em;">CONTACTO</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <header style="min-height: 92vh; display: flex; flex-direction: column; padding: clamp(20px, 4vw, 48px); padding-top: 72px; box-sizing: border-box;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; gap: clamp(24px, 4vw, 64px); flex-wrap: wrap; padding: clamp(40px, 6vw, 80px) 0;">
       <div style="display: flex; flex-direction: column; min-width: min(100%, 480px); flex: 1;">
         <h1 style="margin: 0; font-family: 'Archivo Black', sans-serif; font-size: clamp(44px, 9.5vw, 132px); line-height: .92; letter-spacing: -.015em; text-transform: uppercase; text-wrap: balance;">
