@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Ignacio Galindo — Editor audiovisual</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #0e0d0b; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 8.5in; height: 11in; padding: 30px 38px 22px; color: #f2ede6; font-family: 'Archivo', sans-serif; display: flex; flex-direction: column; overflow: hidden; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .orange { color: #ff5c1a; }
+
+  header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 16px; border-bottom: 2px solid #ff5c1a; }
+  .rec { display: flex; align-items: center; gap: 7px; font-size: 7.5px; letter-spacing: .3em; color: #a39b8f; }
+  .rec i { width: 6px; height: 6px; border-radius: 50%; background: #ff2e1f; display: inline-block; }
+  h1 { margin: 8px 0 0; font-family: 'Archivo Black', sans-serif; font-size: 44px; line-height: .95; text-transform: uppercase; letter-spacing: -.01em; }
+  .subtitle { margin: 12px 0 0; font-size: 14px; font-weight: 600; }
+  .photo { width: 96px; height: 96px; border-radius: 50%; border: 3px solid #ff5c1a; overflow: hidden; flex-shrink: 0; }
+  .photo img { width: 112%; height: 112%; object-fit: cover; margin: -6% 0 0 -6%; display: block; }
+
+  .cols { flex: 1; display: grid; grid-template-columns: 1fr 250px; gap: 0 22px; padding-top: 20px; }
+  .right { border-left: 1px solid #2c2822; padding-left: 22px; }
+  h2 { margin: 0 0 9px; font-family: 'JetBrains Mono', monospace; font-weight: 400; font-size: 9.5px; letter-spacing: .3em; color: #ff5c1a; text-transform: uppercase; }
+  section + section { margin-top: 20px; }
+  p { margin: 0; }
+  .lead { font-size: 10.5px; line-height: 1.6; color: #d9d2c7; }
+
+  .job { display: grid; grid-template-columns: 74px 1fr; gap: 0 10px; margin-bottom: 15px; }
+  .job .date { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; color: #a39b8f; padding-top: 2px; white-space: nowrap; }
+  .job h3 { margin: 0; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .01em; }
+  .job .role { font-size: 9.5px; font-weight: 600; color: #ff5c1a; margin-top: 1px; }
+  .job .desc { font-size: 9.3px; line-height: 1.55; color: #a39b8f; margin-top: 2px; }
+  .now { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 6.5px; letter-spacing: .15em; color: #0e0d0b; background: #ff5c1a; border-radius: 2px; padding: 1px 4px; margin-left: 5px; vertical-align: 1px; }
+
+  .contact p { font-size: 10px; line-height: 1.95; color: #d9d2c7; }
+  .contact a { color: inherit; text-decoration: none; }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tags span { font-size: 8.6px; border: 1px solid #3d382f; border-radius: 10px; padding: 3px 7px; }
+  .soft { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 8px; font-size: 9.2px; }
+  .soft span::before { content: '■'; color: #ff5c1a; font-size: 5px; vertical-align: 2px; margin-right: 5px; }
+  .edu div { margin-bottom: 8px; }
+  .edu b { font-size: 9.4px; font-weight: 700; }
+  .edu .yr { font-family: 'JetBrains Mono', monospace; font-size: 7.8px; color: #a39b8f; margin-left: 3px; }
+  .edu .where { display: block; font-size: 8.6px; color: #a39b8f; margin-top: 1px; }
+
+  footer { display: flex; justify-content: space-between; padding-top: 10px; border-top: 1px solid #2c2822; font-family: 'JetBrains Mono', monospace; font-size: 7px; letter-spacing: .25em; color: #6b655a; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <div class="rec mono"><i></i>REC · MADRID</div>
+      <h1>Ignacio<br>Galindo <span class="orange">Cruces</span></h1>
+      <p class="subtitle">Editor de vídeo · Postproducción · Realizador audiovisual</p>
+    </div>
+    <div class="photo"><img src="../foto-ignacio.png" alt=""></div>
+  </header>
+
+  <div class="cols">
+    <div class="left">
+      <section>
+        <h2>Perfil profesional</h2>
+        <p class="lead">Técnico audiovisual y creador de contenidos con más de 15 años de experiencia en televisión y plataformas digitales. Licenciado en Periodismo, especializado en realización, edición y postproducción. Realizador, editor de vídeo y operador de cámara en programas de televisión, contenidos deportivos y documentales.</p>
+      </section>
+
+      <section>
+        <h2>Experiencia laboral</h2>
+
+        <div class="job">
+          <div class="date">Oct 2026</div>
+          <div>
+            <h3>La nueva televisión de La Séptima<span class="now">ACTUAL</span></h3>
+            <p class="role">Editor de vídeo y coordinador</p>
+            <p class="desc">Edición de vídeo y coordinación de la nueva televisión de La Séptima, que arranca en octubre de 2026.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">Sep 2026</div>
+          <div>
+            <h3>TBS · Contenidos documentales<span class="now">ACTUAL</span></h3>
+            <p class="role">Editor de vídeo</p>
+            <p class="desc">Edición y postproducción de contenidos documentales. Labores de realización, grabación y coordinación audiovisual durante la producción.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">2025 – 2026</div>
+          <div>
+            <h3>Campeonato de MotoGP · Atresmedia Deportes</h3>
+            <p class="role">Editor de vídeo</p>
+            <p class="desc">Edición de reportajes para los programas del Mundial de MotoGP. Creación de vídeos musicales y cabeceras.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">2020 – 2026</div>
+          <div>
+            <h3>El Chiringuito de Jugones · Atresmedia (Mega)</h3>
+            <p class="role">Editor de vídeo y ayudante de realización</p>
+            <p class="desc">Montaje en Avid Media Composer del programa en directo. Operador Vizrt Trio, gestión de envíos internacionales y coordinación con realización y redacción en directo.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">2017 – 2019</div>
+          <div>
+            <h3>YoumoreTV S.L.</h3>
+            <p class="role">Montador y creador de contenido</p>
+            <p class="desc">Montaje en Adobe Premiere Pro y postproducción con After Effects para la network. Gestión de canales de YouTube y contenido para redes sociales.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">2014</div>
+          <div>
+            <h3>Diario de Cádiz · Grupo Joly</h3>
+            <p class="role">Redactor</p>
+            <p class="desc">Redactor de la sección de San Fernando.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">2009</div>
+          <div>
+            <h3>Tecnomedia S.L.</h3>
+            <p class="role">Montador y operador de cámara</p>
+            <p class="desc">Montaje en Final Cut y cámara en videoclips, documentales, realizaciones en directo y reportajes sociales.</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date">2009</div>
+          <div>
+            <h3>OndaChiclana</h3>
+            <p class="role">Montador y operador de cámara</p>
+            <p class="desc">Montaje de programas, informativos y publicidad. Cámara en realizaciones en directo y ENG.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="right">
+      <section class="contact">
+        <h2>Contacto</h2>
+        <p><a class="orange" href="https://ignaciogalindo.me">ignaciogalindo.me</a></p>
+        <p><a href="mailto:ignaciogalindocruces@gmail.com">ignaciogalindocruces@gmail.com</a></p>
+        <p>+34 692 35 69 92</p>
+        <p>San Sebastián de los Reyes, Madrid</p>
+        <p><a href="https://www.youtube.com/watch?v=Yq6McznES8Y">Showreel en ignaciogalindo.me</a></p>
+      </section>
+
+      <section>
+        <h2>Especialidades</h2>
+        <div class="tags">
+          <span>Edición creativa</span><span>Realización multicámara</span><span>Corrección de color</span><span>Gestión de envíos</span><span>Documental</span><span>Coordinación audiovisual</span><span>Fotografía</span><span>Cámaras ENG, CSC y DSLR</span><span>IA generativa</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Software profesional</h2>
+        <div class="soft">
+          <span>Avid Media Composer</span><span>Vizrt Trio</span>
+          <span>Adobe Premiere Pro</span><span>After Effects</span>
+          <span>DaVinci Resolve</span><span>Final Cut Pro</span>
+          <span>EDIUS Pro</span><span>Adobe Audition</span>
+          <span>Adobe Photoshop</span><span>Cubase</span>
+        </div>
+      </section>
+
+      <section class="edu">
+        <h2>Formación académica</h2>
+        <div><b>Máster de Periodismo y Comunicación Digital</b><span class="yr">2015 – 2017</span><span class="where">EAE Business School</span></div>
+        <div><b>Licenciatura de Periodismo</b><span class="where">Facultad de Comunicación, Universidad de Sevilla</span></div>
+        <div><b>FP Ciclo Realización Audiovisual</b><span class="yr">2007 – 2009</span><span class="where">CICLO GRAN (Jerez de la Frontera)</span></div>
+        <div><b>Fotógrafo (F.P.O.)</b><span class="yr">2007 – 2008</span><span class="where">Fundación Audiovisual de Andalucía · 400 h</span></div>
+        <div><b>Introducción general al cine</b><span class="yr">2006 – 2007</span><span class="where">Escuela de cine de Puerto Real · cortometraje en 35 mm</span></div>
+        <div><b>Iluminotécnico de cine</b><span class="yr">2006 – 2007</span><span class="where">Fundación Audiovisual de Andalucía</span></div>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+        <p style="font-size: 10px;">Español (nativo) · Inglés</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <span>LA SÉPTIMA · TBS · MOTOGP · EL CHIRINGUITO DE JUGONES</span>
+    <span>2026</span>
+  </footer>
+</div>
+</body>
+</html>

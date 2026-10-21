@@ -1,0 +1,11 @@
+{
+  "name": "ignaciogalindo.me",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cv": "node cv/generate.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
